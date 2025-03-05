@@ -1,0 +1,37 @@
+{
+  "name": "mcp-coinbase-commerce",
+  "version": "0.1.0",
+  "description": "MCP server for generating Coinbase Commerce payment links",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-esm src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "coinbase",
+    "commerce",
+    "payment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.3.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "eslint": "^8.52.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
